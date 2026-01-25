@@ -1,0 +1,126 @@
+def square_list(nums):
+    return list(map(lambda x: x*x, nums))
+
+def main():
+    nums = list(map(int, input("Enter numbers: ").split()))
+    print(square_list(nums))
+
+if __name__ == "__main__":
+    main()
+
+
+    #2
+    def even_numbers(nums):
+    return list(filter(lambda x: x % 2 == 0, nums))
+
+def main():
+    nums = list(map(int, input("Enter numbers: ").split()))
+    print(even_numbers(nums))
+
+if __name__ == "__main__":
+    main()
+
+
+    #3
+    def odd_numbers(nums):
+    return list(filter(lambda x: x % 2 != 0, nums))
+
+def main():
+    nums = list(map(int, input("Enter numbers: ").split()))
+    print(odd_numbers(nums))
+
+if __name__ == "__main__":
+    main()
+
+
+    #4
+    from functools import reduce
+
+def sum_numbers(nums):
+    return reduce(lambda x, y: x + y, nums)
+
+def main():
+    nums = list(map(int, input("Enter numbers: ").split()))
+    print(sum_numbers(nums))
+
+if __name__ == "__main__":
+    main()
+
+
+    #5
+    from functools import reduce
+
+def max_number(nums):
+    return reduce(lambda x, y: x if x > y else y, nums)
+
+def main():
+    nums = list(map(int, input("Enter numbers: ").split()))
+    print(max_number(nums))
+
+if __name__ == "__main__":
+    main()
+
+
+#6
+from functools import reduce
+
+def max_number(nums):
+    return reduce(lambda x, y: x if x > y else y, nums)
+
+def main():
+    nums = list(map(int, input("Enter numbers: ").split()))
+    print(max_number(nums))
+
+if __name__ == "__main__":
+    main()
+
+
+    #7
+    def long_strings(words):
+    return list(filter(lambda s: len(s) > 5, words))
+
+def main():
+    words = input("Enter strings: ").split()
+    print(long_strings(words))
+
+if __name__ == "__main__":
+    main()
+
+
+    #8
+    def divisible_3_5(nums):
+    return list(filter(lambda x: x % 3 == 0 and x % 5 == 0, nums))
+
+def main():
+    nums = list(map(int, input("Enter numbers: ").split()))
+    print(divisible_3_5(nums))
+
+if __name__ == "__main__":
+    main()
+
+
+    #9
+    from functools import reduce
+
+def product_numbers(nums):
+    return reduce(lambda x, y: x * y, nums)
+
+def main():
+    nums = list(map(int, input("Enter numbers: ").split()))
+    print(product_numbers(nums))
+
+if __name__ == "__main__":
+    main()
+
+
+    #10
+    
+def count_even(nums):
+    return len(list(filter(lambda x: x % 2 == 0, nums)))
+
+def main():
+    nums = list(map(int, input("Enter numbers: ").split()))
+    print(count_even(nums))
+
+if __name__ == "__main__":
+    main()
