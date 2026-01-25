@@ -1,0 +1,115 @@
+square = lambda x: x * x
+
+def main():
+    n = int(input("Enter number: "))
+    print("Square:", square(n))
+
+if __name__ == "__main__":
+    main()
+
+
+    #2
+    cube = lambda x: x * x * x
+
+def main():
+    n = int(input("Enter number: "))
+    print("Cube:", cube(n))
+
+if __name__ == "__main__":
+    main()
+
+
+    #3
+    maximum = lambda a, b: a if a > b else b
+
+def main():
+    a = int(input("Enter first number : "))
+    b = int(input("Enter second number : "))
+    print("Maximum number is :", maximum(a, b))
+
+if __name__ == "__main__":
+    main()
+
+
+    #4
+    
+minimum = lambda a, b: a if a < b else b
+
+def main():
+    a = int(input("Enter first number: "))
+    b = int(input("Enter second number: "))
+    print("Minimum number is :", minimum(a, b))
+
+if __name__ == "__main__":
+    main()
+
+
+
+#5
+even = lambda x: x % 2 == 0
+
+def main():
+    n = int(input("Enter number: "))
+    print("Is Even:", even(n))
+
+if __name__ == "__main__":
+    main()
+
+
+    #6
+    odd = lambda x: x % 2 != 0
+
+def main():
+    n = int(input("Enter number: "))
+    print("Is Odd:", odd(n))
+
+if __name__ == "__main__":
+    main()
+
+
+    #7
+    div5 = lambda x: x % 5 == 0
+
+def main():
+    n = int(input("Enter number: "))
+    print("Divisible by 5:", div5(n))
+
+if __name__ == "__main__":
+    main()
+
+
+    #8
+    add = lambda a, b: a + b
+
+def main():
+    a = int(input("Enter first number: "))
+    b = int(input("Enter second number: "))
+    print("Addition:", add(a, b))
+
+if __name__ == "__main__":
+    main()
+
+
+#9
+multiply = lambda a, b: a * b
+
+def main():
+    a = int(input("Enter first number: "))
+    b = int(input("Enter second number: "))
+    print("Multiplication:", multiply(a, b))
+
+if __name__ == "__main__":
+    main()
+
+
+    #10
+    largest = lambda a, b, c: a if a > b and a > c else (b if b > c else c)
+
+def main():
+    a = int(input("Enter first number: "))
+    b = int(input("Enter second number: "))
+    c = int(input("Enter third number: "))
+    print("Largest Number is :", largest(a, b, c))
+
+if __name__ == "__main__":
+    main()
